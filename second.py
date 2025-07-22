@@ -31,8 +31,8 @@ train_data = [
     ("Can I get 8 water bottles?", {"entities": [(11, 12, "QUANTITY"), (13, 27, "PRODUCT")]}),
 ]
 
-# nlp = spacy.load('en_core_web_md')
-nlp = spacy.blank('en')
+nlp = spacy.load('en_core_web_md')
+# nlp = spacy.blank('en')
 
 if 'ner' not in nlp.pipe_names: 
     ner = nlp.add_pipe('ner')
